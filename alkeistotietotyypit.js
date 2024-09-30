@@ -12,3 +12,6 @@ let integer = 42;
 let decimal = 3.14;
 let notANumber = NaN;
 console.log('Number;', integer, decimal, notANumber);
+
+let unicodeMerkki = '\u{1F603}';
+console.log(unicodeMerkki)
