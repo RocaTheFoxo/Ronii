@@ -5,4 +5,5 @@ console.log("Miljardi = ", miljardi);
 1.23e6 === 1.23 * 1000000;
 console.log("Numeroita:", 1e3, 1.23e6);
 
-let mcs = 0.000001;
+let mcs = 1e-6;
+console.log("Pieni iso numero ", mcs);
