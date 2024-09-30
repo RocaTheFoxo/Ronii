@@ -5,3 +5,5 @@ console.log("Miljardi = ", miljardi);
 1.23e6 === 1.23 * 1000000;
 
 let mcs = 0.000001;
+
+let gay = "homous";
