@@ -13,7 +13,7 @@ console.log(a1 + b1);
 //postfix
 let x = 10;
 y = x++;
-console.log('y=${y}, x=${x}');1§
+console.log('y=${y}, x=${x}');
 
 var a = 20;
 b = ++a;
