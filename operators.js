@@ -22,3 +22,4 @@ let ikä = 20;
 if (ikä > 18 && ikä < 30) {
     console.log("Olet nuori ihminen");
 }
+//moi
