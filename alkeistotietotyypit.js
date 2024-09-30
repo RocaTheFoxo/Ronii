@@ -14,4 +14,4 @@ let notANumber = NaN;
 console.log('Number;', integer, decimal, notANumber);
 
 let unicodeMerkki = '\u{1F603}';
-console.log(unicodeMerkki)
+console.log("Unicode: ", unicodeMerkki)
