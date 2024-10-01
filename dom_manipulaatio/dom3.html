@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom manipulaatio</title>
-
+    <style>
+        .kuvva {
+            position: absolute;
+            left: 650px;
+        }
+    </style>
 </head>
 <body>
-    <img id="kuva" src="R (4).jpg" alt="kuva" style="display: block;" width="100px">
-    <button id="näytaPiilotaKuva">Näytä/piilota kuva</button>
+    <img id="kuva" class="kuvva" src="R (4).jpg" alt="kuva" style="display: none;" width="500px">
+    <button id="näytäPiilotaKuva">Näytä/piilota kuva</button>
 
     <script src="dom3.js"></script>
     <br>
