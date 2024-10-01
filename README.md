@@ -11,4 +11,4 @@ Well the answer is
 
 ABSOLUTELY NOTHING!
 
-<button onclick="window.location.href='https://x.com/RocaTheFox'">Twittah</button>
+<a href="https://www.twitter.com/RocaTheFox">Twittah</a>
