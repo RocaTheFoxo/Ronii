@@ -64,7 +64,7 @@ footer {
 
 .pokemonimage1 {
     width: 200px;
-    left: 50px;
+    left: 200px;
     position: absolute;
     top: 350px;
     background-color: gray;
@@ -125,4 +125,10 @@ footer {
     font-size: 20px;
     text-align: center;
     border: solid black;
+}
+
+#evo {
+    position: absolute;
+    top: 150px;
+    left: 1110px;
 }
