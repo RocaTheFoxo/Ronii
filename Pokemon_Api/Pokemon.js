@@ -23,6 +23,7 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
             let evo2 = `https://pokeapi.co/api/v2/pokemon/${id+2}/`
 
             document.getElementById("eka").style = "display: block"
+            document.getElementById("eka").innerHTML = nimi
 
             fetch(evo1)
             .then(response1 => {
@@ -42,10 +43,12 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
 
                 document.getElementById('pokemonTiedot').appendChild(uuskuva)
                 document.getElementById("toinen").style = "display: block"
+                document.getElementById("toinen").innerHTML = nimi1
             })
             .catch(error1 => {
                 console.log(error1)
                 document.getElementById("toinen").style = "display: none"
+                document.getElementById("seuraava").style = "display: none"
             });
 
             fetch(evo2)
@@ -66,10 +69,12 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
 
                 document.getElementById('pokemonTiedot').appendChild(uuskuva)
                 document.getElementById("kolmas").style = "display: block"
+                document.getElementById("kolmas").innerHTML = nimi2
             })
             .catch(error2 => {
                 console.log(error2)
                 document.getElementById("kolmas").style = "display: none"
+                document.getElementById("seuraava2").style = "display: none"
             });
 
             document.getElementById('pokemonTiedot').innerHTML = `
@@ -90,6 +95,12 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
             document.getElementById("seuraava2").style = "display: none"
             document.getElementById('pokemonTiedot').innerHTML = `<p>${error.message}</p>`
         });
+})
+
+document.getElementById("evo").addEventListener("click", function() {
+    let rnd = Math.floor(Math.random() * 1025 - 1) + 1
+
+    document.getElementById("pokemonNimi").value = rnd
 })
 
 /*function getevo(url) {
