@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
+    <link rel="stylesheet" href="Pokemon.css">
 </head>
 <body>
-    <h1>Pokémon</h1>
+    <header>
+        <h1>Pokémon</h1>
+    </header>
+
+    <div class="container"></div>
     <form id="pokemonForm"> 
         <input type="text" id="pokemonNimi" placeholder="Anna Pokémonin nimi tai ID" required>
         <button type="submit">Hae Pokémon</button>
+        <button id="evo">Tästä Evoluutio</button>
     </form>
     <div id="pokemonTiedot"></div>
+
+    <footer>
+        <h2>Roni Luiro</h2>
+    </footer>
     <script src="Pokemon.js"></script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: black 0 0 10px;
+}
+
+footer {
+    background-color: red;
+    padding: 20px;
+    bottom: 0;
+    width: 97.9%;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    position: absolute;
+    left: 660px;
+    top: 140px;
+    border-radius: 40px;
+}
+
+#pokemonForm {
+    position: absolute;
+    left: 820px;
+    top: 150px;
+}
+
+#pokemonTiedot {
+    position: absolute;
+    left: 890px;
+    top: 170px;
+}
+
+.pokemonclass {
+    color: white;
+    background-color: darkblue;
+    position: fixed;
+    width: 595px;
+    left: 660px;
+    text-align: center;
+    border: solid black;
+}
+
+.pokemonimage {
+    width: 200px;
+    left: -30px;
+    position: absolute;
+    top: 350px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.pokemonimage1 {
+    width: 200px;
+    left: 50px;
+    position: absolute;
+    top: 350px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.pokemontype {
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    left: 900px;
+    top: 230px;
+    background-color: darkblue;
+    width: 595px;
+    left: 660px;
+    height: 35px;
+    text-align: center;
+    border: solid black;
+}
+
+.pokemonweight {
+    color: white;
+    position: fixed;
+    top: 285px;
+    left: 900px;
+    background-color: darkblue;
+    width: 595px;
+    left: 660px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: solid black;
+}
+
+.pokemonheight {
+    color: white;
+    position: fixed;
+    top: 345px;
+    left: 900px;
+    background-color: darkblue;
+    width: 595px;
+    left: 660px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: solid black;
+}
+
+.pokemonid {
+    color: white;
+    position: fixed;
+    top: 400px;
+    left: 900px;
+    background-color: darkblue;
+    width: 595px;
+    left: 660px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border: solid black;
+}

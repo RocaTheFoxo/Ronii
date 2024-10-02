@@ -17,13 +17,17 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
             let tyyppi = data.types.map(type => type.type.name).join(', ');
             let paino = data.weight / 10;
             let pituus = data.height / 10;
+            let id = data.id;
+
+            let evolutionUrl = `https://pokeapi.co/api/v2/evolution-chain/${id}/`
 
             document.getElementById('pokemonTiedot').innerHTML = `
-                <h2>${nimi}</h2>
-                <img src="${kuva}" alt="${nimi}">
-                <p><strong>Tyyppi:</strong> ${tyyppi}</p>
-                <p><strong>Paino:</strong> ${paino} kg</p>
-                <p><strong>Pituus:</strong> ${pituus} m</p>
+                <h1 class="pokemonclass">${nimi}</h1>
+                <img class="pokemonimage" src="${kuva}" alt="${nimi}">
+                <p class="pokemontype"><strong>Tyyppi:</strong> ${tyyppi}</p>
+                <p class="pokemonweight"><strong>Paino:</strong> ${paino} kg</p>
+                <p class="pokemonheight"><strong>Pituus:</strong> ${pituus} m</p>
+                <p class="pokemonid"><strong>Id:</strong> ${id}</p>
             `;
         })
         .catch(error => {
