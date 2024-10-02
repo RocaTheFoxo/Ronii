@@ -19,8 +19,58 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
             let pituus = data.height / 10;
             let id = data.id;
 
-            let evo1 = `https://pokeapi.co/api/v2/evolution-chain/${id+1}/`
-            let evo2 = `https://pokeapi.co/api/v2/evolution-chain/${id+2}/`
+            let evo1 = `https://pokeapi.co/api/v2/pokemon/${id+1}/`
+            let evo2 = `https://pokeapi.co/api/v2/pokemon/${id+2}/`
+
+            document.getElementById("eka").style = "display: block"
+
+            fetch(evo1)
+            .then(response1 => {
+                if (!response1.ok) {
+                    throw new Error('Pokémonia ei löytynyt.');
+                }
+                return response1.json();
+            })
+            .then(data1 => {
+                let nimi1 = data1.name.charAt(0).toUpperCase() + data1.name.slice(1);
+                let kuva1 = data1.sprites.front_default;
+
+                let uuskuva = document.createElement("img")
+                uuskuva.className = "pokemonimage1"
+                uuskuva.src = kuva1
+                uuskuva.alt = nimi1
+
+                document.getElementById('pokemonTiedot').appendChild(uuskuva)
+                document.getElementById("toinen").style = "display: block"
+            })
+            .catch(error1 => {
+                console.log(error1)
+                document.getElementById("toinen").style = "display: none"
+            });
+
+            fetch(evo2)
+            .then(response2 => {
+                if (!response2.ok) {
+                    throw new Error('Pokémonia ei löytynyt.');
+                }
+                return response2.json();
+            })
+            .then(data2 => {
+                let nimi2 = data2.name.charAt(0).toUpperCase() + data2.name.slice(1);
+                let kuva2 = data2.sprites.front_default;
+
+                let uuskuva = document.createElement("img")
+                uuskuva.className = "pokemonimage2"
+                uuskuva.src = kuva2
+                uuskuva.alt = nimi2
+
+                document.getElementById('pokemonTiedot').appendChild(uuskuva)
+                document.getElementById("kolmas").style = "display: block"
+            })
+            .catch(error2 => {
+                console.log(error2)
+                document.getElementById("kolmas").style = "display: none"
+            });
 
             document.getElementById('pokemonTiedot').innerHTML = `
                 <h1 class="pokemonclass">${nimi}</h1>
@@ -30,8 +80,14 @@ document.getElementById('pokemonForm').addEventListener('submit', function(event
                 <p class="pokemonheight"><strong>Pituus:</strong> ${pituus} m</p>
                 <p class="pokemonid"><strong>Id:</strong> ${id}</p>
             `;
+
+            document.getElementById("seuraava").style = "display: block"
+            document.getElementById("seuraava2").style = "display: block"
         })
         .catch(error => {
+            document.getElementById("eka").style = "display: none"
+            document.getElementById("seuraava").style = "display: none"
+            document.getElementById("seuraava2").style = "display: none"
             document.getElementById('pokemonTiedot').innerHTML = `<p>${error.message}</p>`
         });
 })

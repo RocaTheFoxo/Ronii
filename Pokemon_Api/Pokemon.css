@@ -22,11 +22,11 @@ footer {
 }
 
 .container {
-    width: 600px;
+    width: 900px;
     height: 600px;
     background-color: blue;
     position: absolute;
-    left: 660px;
+    left: 500px;
     top: 140px;
     border-radius: 40px;
 }
@@ -47,15 +47,15 @@ footer {
     color: white;
     background-color: darkblue;
     position: fixed;
-    width: 595px;
-    left: 660px;
+    width: 894px;
+    left: 500px;
     text-align: center;
     border: solid black;
 }
 
 .pokemonimage {
     width: 200px;
-    left: -30px;
+    left: -370px;
     position: absolute;
     top: 350px;
     background-color: gray;
@@ -64,7 +64,16 @@ footer {
 
 .pokemonimage1 {
     width: 200px;
-    left: 200px;
+    left: -35px;
+    position: absolute;
+    top: 350px;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.pokemonimage2 {
+    width: 200px;
+    left: 300px;
     position: absolute;
     top: 350px;
     background-color: gray;
@@ -78,8 +87,8 @@ footer {
     left: 900px;
     top: 230px;
     background-color: darkblue;
-    width: 595px;
-    left: 660px;
+    width: 894px;
+    left: 500px;
     height: 35px;
     text-align: center;
     border: solid black;
@@ -91,8 +100,8 @@ footer {
     top: 285px;
     left: 900px;
     background-color: darkblue;
-    width: 595px;
-    left: 660px;
+    width: 894px;
+    left: 500px;
     height: 35px;
     font-size: 20px;
     text-align: center;
@@ -105,8 +114,8 @@ footer {
     top: 345px;
     left: 900px;
     background-color: darkblue;
-    width: 595px;
-    left: 660px;
+    width: 894px;
+    left: 500px;
     height: 35px;
     font-size: 20px;
     text-align: center;
@@ -119,8 +128,8 @@ footer {
     top: 400px;
     left: 900px;
     background-color: darkblue;
-    width: 595px;
-    left: 660px;
+    width: 894px;
+    left: 500px;
     height: 35px;
     font-size: 20px;
     text-align: center;
@@ -131,4 +140,49 @@ footer {
     position: absolute;
     top: 150px;
     left: 1110px;
+}
+
+#seuraava {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 860px;
+    bottom: 420px;
+    display: none;
+}
+
+#seuraava2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 1190px;
+    bottom: 420px;
+    display: none;
+}
+
+#eka {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 560px;
+    bottom: 220px;
+    display: none;
+}
+
+#toinen {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 880px;
+    bottom: 220px;
+    display: none;
+}
+
+#kolmas {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 1190px;
+    bottom: 220px;
+    display: none;
 }
