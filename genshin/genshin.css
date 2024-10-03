@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+
+header {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(80, 80, 80);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 97.9%;
+}
+
+.artifacts {
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+
+#artifacts1{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#artifactinfo {
+    text-align: center;
+}
+
+.bosses {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 127px;
+    left: 550px;
+}
+
+#bosses1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#bossinfo {
+    text-align: center;
+    color: white;
+}
+
+.characters {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 127px;
+    left: 1100px;
+    color: white;
+}
+
+#characters1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#characterinfo {
+    text-align: center;
+}
+
+.consumables {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    top: 900px;
+}
+
+#consumables1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#consumableinfo {
+    text-align: center;
+}
