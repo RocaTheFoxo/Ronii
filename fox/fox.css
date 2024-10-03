@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+image {
+    position: absolute;
+}
+
+header {
+    position: absolute;
+    width: 97.9%;
+    text-align: center;
+}
+
+.foxcontainer {
+    position: absolute;
+    top: 70px;
+    width: 600px;
+    height: 600px;
+    left: 635px;
+}
+
+#btn {
+    margin-left: 260px;
+    margin-top: 10px;
+}
+
+.foxpic {
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 150px;
+    border-radius: 30px;
+    box-shadow: white 0 0 50px;
+}
