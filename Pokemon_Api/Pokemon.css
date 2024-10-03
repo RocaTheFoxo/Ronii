@@ -11,6 +11,12 @@ header {
     text-shadow: black 0 0 10px;
 }
 
+.pokeball {
+    position: absolute;
+    left: 1050px;
+    top: 35px;
+}
+
 footer {
     background-color: red;
     padding: 20px;
@@ -164,8 +170,10 @@ footer {
     color: white;
     font-size: 20px;
     position: absolute;
-    left: 560px;
+    left: 521px;
     bottom: 220px;
+    width: 200px;
+    text-align: center;
     display: none;
 }
 
@@ -173,8 +181,10 @@ footer {
     color: white;
     font-size: 20px;
     position: absolute;
-    left: 880px;
+    left: 857px;
     bottom: 220px;
+    width: 200px;
+    text-align: center;
     display: none;
 }
 
@@ -184,5 +194,7 @@ footer {
     position: absolute;
     left: 1190px;
     bottom: 220px;
+    width: 200px;
+    text-align: center;
     display: none;
 }
