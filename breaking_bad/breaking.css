@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: breaking_bad;
+    src: url(Heart\ Breaking\ Bad.otf);
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-family: breaking_bad;
+}
+
+.container {
+    background-color: gray;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 550px;
+}
+
+.btn {
+    width: 120px;
+    font-size: 40px;
+    position: absolute;
+    left: 340px;
+    font-family: breaking_bad;
+}
+
+#quotte {
+    margin-top: 70px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#author {
+    font-size: 20px;
+    margin-left: 10px;
+}
