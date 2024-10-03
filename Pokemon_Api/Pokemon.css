@@ -17,6 +17,17 @@ header {
     top: 35px;
 }
 
+.pokedex {
+    position: absolute;
+    font-size: 20px;
+    top: 90px;
+    color: white;
+}
+
+.pokedex:hover {
+    transform: scale(1.1);
+}
+
 footer {
     background-color: red;
     padding: 20px;
