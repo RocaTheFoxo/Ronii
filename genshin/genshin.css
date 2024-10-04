@@ -15,8 +15,8 @@ footer {
     padding: 20px;
     color: white;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -500%;
     width: 97.9%;
 }
 
@@ -74,7 +74,6 @@ footer {
 .consumables {
     width: 500px;
     height: 500px;
-    background-color: green;
     position: absolute;
     top: 900px;
 }
@@ -86,4 +85,107 @@ footer {
 
 #consumableinfo {
     text-align: center;
+}
+
+.domains {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 900px;
+    left: 550px;
+}
+
+#domains1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#domainInfo {
+    color: white;
+    text-align: center;
+}
+
+#domainInfo2 {
+    color: white;
+    position: absolute;
+    left: 1030px;
+    top: 985px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.elements {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 1450px;
+}
+
+#elements1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#elementinfo {
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+}
+
+.enemies {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 2000px;
+}
+
+#enemies1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#enemyinfo {
+    color: white;
+    text-align: center;
+}
+
+#enemyinfo1 {
+    position: absolute;
+    top: 2040px;
+    color: white;
+    left: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+}
+
+.materials {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 2600px;
+}
+
+#materials1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#materialinfo {
+    color: white;
+    text-align: center;
+}
+
+.nations {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    top: 3000px;
+}
+
+#nations1 {
+    margin-top: 20px;
+    margin-left: 10px;
 }
