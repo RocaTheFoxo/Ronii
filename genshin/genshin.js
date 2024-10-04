@@ -381,12 +381,58 @@ document.getElementById("getnation").addEventListener("submit", function(e) {
             return response.json();
         })
         .then(data => {
-            data.forEach(function(v) {
-                fetch(ApiUrl9+"/"+v)
+            if (data.indexOf(nation) >= 0) {
+                fetch(ApiUrl9+"/"+nation)
                 .then(response1 => response1.json())
                 .then(data1 => {
                     console.log(data1)
+                    let name = data1.name
+                    let elem = data1.element
+                    let archon = data1.archon
+                    let mayor = data1.controllingEntity
+                    let id = data1.id
+                    document.getElementById("nationinfo").innerHTML = `
+                        <h2>${name}</h2>
+                        <h2>Element: ${elem}</h2>
+                        <h2>Archon: ${archon}</h2>
+                        <h2>Mayor: ${mayor}</h2>
+                    `
                 })
-            })
+            }
+        })
+})
+
+document.getElementById("getweapon").addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let weapon = document.getElementById("weapons1").value.toLowerCase();
+    let ApiUrl10 = `https://genshin.jmp.blue/weapons/${weapon}`
+
+    fetch(ApiUrl10)
+        .then (response => {
+            if (!response.ok) {
+                throw new Error ("Weapon not found")
+            }
+            return response.json();
+        })
+
+        .then (data => {
+            console.log(data)
+
+            let name = data.name
+            let desc = data.passiveDesc
+            let baseAttack = data.baseAttack
+            let rarity = data.rarity
+            let subStat = data.subStat
+            let type = data.type
+
+            document.getElementById("weaponinfo").innerHTML = `
+                <h2>${name}</h2>
+                <h3>${desc}</h3>
+                <h2>baseAttack: ${baseAttack}</h2>
+                <h2>Rarity: ${rarity}</h2>
+                <h2>substat: ${subStat}</h2>
+                <h2>type: ${type}</h2>
+            `
         })
 })

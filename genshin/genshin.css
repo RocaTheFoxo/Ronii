@@ -138,7 +138,8 @@ footer {
     position: absolute;
     width: 500px;
     height: 500px;
-    top: 2000px;
+    top: 1450px;
+    left: 550px;
 }
 
 #enemies1 {
@@ -164,7 +165,7 @@ footer {
     width: 500px;
     height: 300px;
     position: absolute;
-    top: 2600px;
+    top: 2000px;
 }
 
 #materials1 {
@@ -180,12 +181,34 @@ footer {
 .nations {
     width: 500px;
     height: 500px;
-    background-color: green;
     position: absolute;
-    top: 3000px;
+    top: 2400px;
 }
 
 #nations1 {
     margin-top: 20px;
     margin-left: 10px;
+}
+
+#nationinfo {
+    color: white;
+    text-align: center;
+}
+
+.weapons {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 2000px;
+    left: 550px;
+}
+
+#weapons1 {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#weaponinfo {
+    color: white;
+    text-align: center;
 }
