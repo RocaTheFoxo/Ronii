@@ -3,6 +3,24 @@ body {
     background-color: gray;
 }
 
+@font-face {
+    font-family: Candara;
+    src: url(Candara.ttf);
+}
+
+@font-face {
+    font-family: Candara_Bold;
+    src: url(Candara_Bold.ttf);
+}
+
+* {
+    font-family: Candara;
+}
+
+.name1 {
+    font-family: Candara_Bold;
+}
+
 header {
     background-color: rgb(80, 80, 80);
     color: white;
@@ -27,9 +45,16 @@ footer {
 }
 
 .artifacts {
+    position: absolute;
     width: 500px;
     height: 500px;
     color: white;
+    background-color: blue;
+    border: solid black;
+}
+
+#getartifact {
+    margin-left: 120px;
 }
 
 #artifacts1{
@@ -44,9 +69,15 @@ footer {
 .bosses {
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 720px;
     top: 127px;
     left: 550px;
+    background-color: purple;
+    border: solid black;
+}
+
+#getboss {
+    margin-left: 120px;
 }
 
 #bosses1 {
@@ -62,10 +93,16 @@ footer {
 .characters {
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 600px;
     top: 127px;
     left: 1100px;
     color: white;
+    background-color: blueviolet;
+    border: solid black;
+}
+
+#getcharacter {
+    margin-left: 120px;
 }
 
 #characters1 {
@@ -82,6 +119,12 @@ footer {
     height: 500px;
     position: absolute;
     top: 900px;
+    background-color: darkgoldenrod;
+    border: solid black;
+}
+
+#getconsumable {
+    margin-left: 120px;
 }
 
 #consumables1 {
@@ -91,6 +134,7 @@ footer {
 
 #consumableinfo {
     text-align: center;
+    color: white;
 }
 
 .domains {
@@ -99,6 +143,12 @@ footer {
     height: 500px;
     top: 900px;
     left: 550px;
+    background-color: darkred;
+    border: solid black;
+}
+
+#getdomain {
+    margin-left: 120px;
 }
 
 #domains1 {
@@ -115,10 +165,12 @@ footer {
     color: white;
     position: absolute;
     left: 1030px;
-    top: 985px;
+    top: 900px;
     width: 500px;
     height: 500px;
     text-align: center;
+    background-color: darkred;
+    border: solid black;
 }
 
 .elements {
@@ -126,6 +178,12 @@ footer {
     width: 500px;
     height: 500px;
     top: 1450px;
+    background-color: darkcyan;
+    border: solid black;
+}
+
+#getelement {
+    margin-left: 120px;
 }
 
 #elements1 {
@@ -146,6 +204,12 @@ footer {
     height: 500px;
     top: 1450px;
     left: 550px;
+    background-color: darkslateblue;
+    border: solid black;
+}
+
+#getenemy {
+    margin-left: 120px;
 }
 
 #enemies1 {
@@ -160,9 +224,9 @@ footer {
 
 #enemyinfo1 {
     position: absolute;
-    top: 2040px;
+    top: 1800px;
     color: white;
-    left: 550px;
+    left: 650px;
     display: grid;
     grid-template-columns: repeat(2, 500px);
 }
@@ -172,6 +236,12 @@ footer {
     height: 300px;
     position: absolute;
     top: 2000px;
+    background-color: goldenrod;
+    border: solid black;
+}
+
+#getmaterial {
+    margin-left: 120px;
 }
 
 #materials1 {
@@ -189,6 +259,12 @@ footer {
     height: 500px;
     position: absolute;
     top: 2400px;
+    background-color: indigo;
+    border: solid black;
+}
+
+#getnation {
+    margin-left: 120px;
 }
 
 #nations1 {
@@ -207,6 +283,12 @@ footer {
     height: 500px;
     top: 2000px;
     left: 550px;
+    background-image: linear-gradient(darkred, darkgoldenrod);
+    border: solid black;
+}
+
+#getweapon {
+    margin-left: 120px;
 }
 
 #weapons1 {

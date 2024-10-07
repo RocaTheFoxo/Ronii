@@ -22,7 +22,7 @@ document.getElementById("getartifact").addEventListener('submit', function(e) {
             let bonus2 = data["4-piece_bonus"]
 
             document.getElementById("artifactinfo").innerHTML = `
-                <h2>${name}</h2>
+                <h2 class="name1">${name}</h2>
                 <h2>Max Rarity: ${rarity}</h2>
                 <h2>2 Piece Bonus: ${bonus}</h2>
                 <h2>4 Piece Bonus: ${bonus2}</h2>
@@ -63,17 +63,15 @@ document.getElementById("getboss").addEventListener('submit', function(e) {
             let artifact4 = data.artifacts["4"].name
 
             document.getElementById("bossinfo").innerHTML = `
-                <h2>${name}</h2>
+                <h2 class="name1">${name}</h2>
                 <p>${desc}</p>
                 <h2>Drops</h2>
                 <h2>${drops}</h2>
                 <h2>${drops1}</h2>
                 <h2>${drops2}</h2>
                 <h2>Artifacts</h2>
-                <h2>${artifact}</h2>
-                <h2>${artifact1}</h2>
-                <h2>${artifact2}</h2>
-                <h2>${artifact3}</h2>
+                <h2>${artifact}, ${artifact1}</h2>
+                <h2>${artifact2}, ${artifact3}</h2>
                 <h2>${artifact4}</h2>
                 
             `
@@ -109,7 +107,7 @@ document.getElementById("getcharacter").addEventListener('submit', function(e) {
             let release = data.release
 
             document.getElementById("characterinfo").innerHTML = `
-                <h2>${name}</h2>
+                <h2 class="name1">${name}</h2>
                 <p>${desc}</p>
                 <h2>${gender}</h2>
                 <h2>Title: ${title}</h2>
@@ -146,7 +144,7 @@ document.getElementById("getconsumable").addEventListener('submit', function(e) 
                 let type = data1[consumable].type || "None"
                 let effect = data1[consumable].effect
                 document.getElementById("consumableinfo").innerHTML = `
-                    <h2>${name}</h2>
+                    <h2 class="name1">${name}</h2>
                     <p>${desc}</p>
                     <h2>${effect}</h2>
                     <h2>Rarity: ${rarity}</h2>
@@ -190,7 +188,7 @@ document.getElementById("getdomain").addEventListener('submit', function(e) {
         let elements2 = data.recommendedElements[2]
 
         document.getElementById("domainInfo").innerHTML = `
-            <h2>${name}</h2>
+            <h2 class="name1">${name}</h2>
             <p>${description}</p>
             <h2>Location: ${location}</h2>
             <h2>Nation: ${nation}</h2>
@@ -235,6 +233,7 @@ document.getElementById("getelement").addEventListener('submit', function(e) {
         data.reactions.forEach(function(a, i) {
             let name = document.createElement("h2")
             name.innerHTML = a.name
+            name.className = "name1"
 
             let desc = document.createElement("h2")
             desc.innerHTML = a.description
@@ -308,7 +307,7 @@ document.getElementById("getenemy").addEventListener('submit', function(e) {
         }
 
         document.getElementById("enemyinfo").innerHTML = `
-            <h2>${name}</h2>
+            <h2 class="name1">${name}</h2>
             <h2>Faction: ${faction}</h2>
             <h2>Family: ${family}</h2>
             <h2>Region: ${region}</h2>
@@ -392,7 +391,7 @@ document.getElementById("getnation").addEventListener("submit", function(e) {
                     let mayor = data1.controllingEntity
                     let id = data1.id
                     document.getElementById("nationinfo").innerHTML = `
-                        <h2>${name}</h2>
+                        <h2 class="name1">${name}</h2>
                         <h2>Element: ${elem}</h2>
                         <h2>Archon: ${archon}</h2>
                         <h2>Mayor: ${mayor}</h2>
@@ -427,7 +426,7 @@ document.getElementById("getweapon").addEventListener('submit', function(e) {
             let type = data.type
 
             document.getElementById("weaponinfo").innerHTML = `
-                <h2>${name}</h2>
+                <h2 class="name1">${name}</h2>
                 <h3>${desc}</h3>
                 <h2>baseAttack: ${baseAttack}</h2>
                 <h2>Rarity: ${rarity}</h2>
