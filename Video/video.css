@@ -1,0 +1,14 @@
+#myVideo {
+    position: absolute;
+    left: 650px;
+}
+
+#container {
+    position: absolute;
+    bottom: 250px;
+    left: 890px;
+}
+
+#status {
+    color: goldenrod;
+}
